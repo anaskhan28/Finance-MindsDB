@@ -106,7 +106,7 @@ const Row1 = () => {
            style={{fontSize: '10px'}} 
            
            />
-          <Tooltip />
+          <Tooltip  formatter={(v) => `$${v}`}/>
           <Area type="monotone" 
           dataKey="revenue" 
           dot= {true}
@@ -156,7 +156,7 @@ const Row1 = () => {
            style={{fontSize: '10px'}} 
            
            />
-          <Tooltip />
+          <Tooltip formatter={(v) => `$${v}`} />
           <Legend height={20} wrapperStyle={{
             margin: '0 0 10px 0'
           }} />
@@ -217,7 +217,7 @@ const Row1 = () => {
              axisLine={false}
              tickLine={false}
              style={{fontSize: '10px'}} />
-          <Tooltip />
+          <Tooltip  formatter={(v) => `$${v}`}/>
           <Bar dataKey="revenue" fill="url(#colorRevenue)" />
           
         </BarChart>
